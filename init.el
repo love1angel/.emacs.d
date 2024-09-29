@@ -30,6 +30,7 @@
 (require 'init-git)
 
 (require 'init-snippets)
+(require 'init-cpp)
 
 (use-package which-key
   :ensure t
