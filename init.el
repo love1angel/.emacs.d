@@ -29,6 +29,7 @@
 (require 'init-org)
 (require 'init-git)
 
+(require 'init-snippets)
 
 (use-package which-key
   :ensure t

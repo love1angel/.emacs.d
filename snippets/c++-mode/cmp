@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: compare use strong ordering
+# key: cmp
+# --
+
+const auto ${1:ordering} { ${2:target} <=> ${3:variable} };
+if (std::is_gt($1)) {
+    $4;
+} else if (std::is_lt($1)) {
+    $5;
+} else {
+    $0;
+}

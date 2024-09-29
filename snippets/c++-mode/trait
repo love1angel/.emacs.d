@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: trait
+# key: trait
+# --
+
+template <typename T>
+concept $1 = requires(T t) {
+    $0
+};

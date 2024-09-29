@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: var
+# key: var
+# --
+
+const auto ${1:x} { $2 }$0;

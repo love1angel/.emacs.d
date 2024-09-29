@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: as cast
+# key: as
+# --
+
+static_cast<$1>($2)$0

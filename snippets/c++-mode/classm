@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: class only for move
+# key: classm
+# --
+
+class $1 {
+public:
+
+public:
+    $1() = default;
+    $1(const $1&) = delete("class $1 only for move");
+    $1& operator=(const $1&) = delete("class $1 only for move");
+
+private:
+    $0
+};
