@@ -14,6 +14,11 @@
   :custom
   (nerd-icons-font-family "JetBrainsMonoNL Nerd Font Mono"))
 
+(use-package dashboard
+  :ensure t
+  :config
+  (dashboard-setup-startup-hook))
+
 (use-package doom-modeline
   :ensure t
   :after nerd-icons

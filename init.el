@@ -9,7 +9,7 @@
  '(delete-selection-mode t)
  '(electric-pair-mode t)
  '(global-auto-revert-mode t)
- '(package-selected-packages '(doom-modeline dracula-theme))
+ '(package-selected-packages '(dashboard doom-modeline dracula-theme org-superstar))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 (custom-set-faces
@@ -27,4 +27,3 @@
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (require 'init-ui)
 (require 'init-org)
-
