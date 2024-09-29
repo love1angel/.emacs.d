@@ -30,6 +30,8 @@
 (require 'init-git)
 
 (require 'init-snippets)
+(require 'init-completion)
+(require 'init-lsp)
 (require 'init-cpp)
 
 (use-package which-key

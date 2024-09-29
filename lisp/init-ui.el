@@ -25,8 +25,8 @@
   :init
   (doom-modeline-mode 1))
 
-
 (add-hook 'window-setup-hook #'toggle-frame-maximized)
+
 
 (provide 'init-ui)
 ;;; init-ui.el ends here
