@@ -7,7 +7,12 @@
 (use-package yasnippet
   :ensure t
   :config
-  (yas-global-mode 1))
+  (define-key yas-minor-mode-map [(tab)]        nil)
+  (define-key yas-minor-mode-map (kbd "TAB")    nil)
+  (define-key yas-minor-mode-map (kbd "<tab>")  nil)
+  :bind
+  (:map yas-minor-mode-map ("M-*" . yas-expand))
+  :hook (after-init . yas-global-mode))
 
 
 (provide 'init-snippets)
