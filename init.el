@@ -19,8 +19,12 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "JetBrainsMonoNL Nerd Font Mono" :foundry "nil" :slant normal :weight regular :height 140 :width normal)))))
 
-(add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(require 'package)
+;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
+;; and `package-pinned-packages`. Most users will not need or want to do this.
+;;(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(package-initialize)
 
 (setq make-backup-files nil)
 
@@ -34,7 +38,11 @@
 (require 'init-lsp)
 (require 'init-cpp)
 
-(use-package which-key
-  :ensure t
-  :config
-  (which-key-mode))
+(package-install 'vertico)
+(vertico-mode t)
+
+(package-install 'orderless)
+(setq completion-styles '(orderless))
+
+(package-install 'marginalia)
+(marginalia-mode t)

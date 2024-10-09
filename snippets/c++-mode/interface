@@ -10,9 +10,11 @@ public:
 public:
     virtual ~I$1() = default;
 
-    I$1() = default;
     I$1(const I$1&) = delete("struct $1: intended for interface");
     I$1& operator=(const I$1&) = delete("struct $1: intended for interface");
     I$1(I$1&&) = delete("struct $1: intended for interface");
     I$1& operator=(I$1&&) = delete("struct $1: intended for interface");
+
+protected:
+    I$1() = default;
 };
