@@ -7,10 +7,10 @@
 (use-package magit
   :ensure t
   :commands (magit-status)
-  :bind (("C-x gs" . magit-status)
-	 ("C-x gc" . magit-commit-create)
-	 ("C-x ga" . magit-commit-amend)
-	 ("C-x g." . magit-stage)))
+  :bind (("C-c gs" . magit-status)
+	 ("C-c gc" . magit-commit-create)
+	 ("C-c ga" . magit-commit-amend)
+	 ("C-c g s" . magit-stage)))
 
 (use-package diff-hl
   :ensure t
